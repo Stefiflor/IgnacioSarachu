@@ -1,0 +1,95 @@
+/* CSS Variables - CORPORATE PREMIUM / BOUTIQUE FIRM */
+
+:root {
+  /* Colors - Mature, Trustworthy, Elegant */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #F8F9FA; /* Muy sutil gris cálido */
+  --color-bg-accent: #EDF2F7;
+  
+  --color-text-primary: #1A202C; /* Carbón oscuro pero no negro absoluto */
+  --color-text-secondary: #4A5568; 
+  --color-text-muted: #A0AEC0;
+  
+  /* Brand Colors */
+  --color-brand-primary: #0A2540; /* Navy profundo (Stripe Corporate) / Oxford Blue */
+  --color-brand-secondary: #1C3D5A;
+  --color-brand-accent: #C5A47E; /* Dorado/Arena sutil y maduro (Boutique) */
+  --color-brand-accent-hover: #D4B692;
+  
+  /* Utilities */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Shadows - Suaves y maduras */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(10, 37, 64, 0.08); /* Sombra con el tono navy */
+  --shadow-lg: 0 10px 25px rgba(10, 37, 64, 0.1);
+
+  /* Transitions */
+  --transition-fast: 200ms ease;
+  --transition-normal: 400ms ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.7; /* Mayor legibilidad para +50 */
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; /* Aporta muchísima madurez y "estudio caro" */
+  line-height: 1.2;
+  color: var(--color-brand-primary);
+}
+
+p {
+  font-size: 1.125rem; /* Letra un poco más grande por default */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-fast);
+}
+
+/* Gradients */
+.bg-navy-gradient {
+  background: linear-gradient(135deg, var(--color-brand-primary) 0%, var(--color-brand-secondary) 100%);
+  color: white;
+}
+
+/* Base Utility Classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 8rem 0;
+  }
+}
