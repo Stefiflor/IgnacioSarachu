@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // WhatsApp info from user request: CTA fuerte de WhatsApp
-const whatsappNumber = "549XXXXXXXXX"; // Reemplazar despues 
-const whatsappMessage = "Hola Ignacio, me gustaría reservar una consulta privada para analizar el estado de mi empresa.";
+const whatsappNumber = "5492901466834";
+const whatsappMessage = "Hola Ignacio, me gustaría reservar una consulta privada para analizar el estado de mi empresa y planificar los próximos pasos.";
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 </script>
 
