@@ -241,13 +241,13 @@ onUnmounted(() => {
   max-height: 0;
   overflow: hidden;
   transition: max-height var(--transition-normal);
-  border-bottom: 1px solid var(--color-bg-accent);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
 }
 
 .mobile-menu--open {
   max-height: 400px;
   padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-bg-accent);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.05);
 }
 
 .mobile-nav-links {
